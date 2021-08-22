@@ -1,0 +1,41 @@
+﻿$font-stack: Helvetica, sans-serif; 
+$primary-color: #333; 
+$back-color: #000000;
+$table-striped-order: even;
+$table-accent-bg: #6c6b6b;
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+body
+{
+    font: 100% $font-stack;
+    color: $primary-color;
+    background-color: $back-color;
+}
+
+.table
+{
+    background-color: lightslategray;
+}
+
+.table-striped {
+    tbody tr:nth-of-type(#{$table-striped-order}) {
+        background-color: $table-accent-bg;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+#{$a-tags} {
+    color: $primary-color;
+    text-decoration: none;
+    font: 100% jensen
+}
+
+#{$a-tags-hover} {
+    color: $primary-color;
+    text-decoration: underline;
+    font: 100% jensen
+}
